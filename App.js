@@ -125,18 +125,17 @@ const AppNavigator = createStackNavigator({
                   backgroundColor: '#fff',
                   marginTop: 8,
                   marginLeft: 8,
-
                   borderRadius: 20,
                 }}
-                placeholder="Type here ..."
+                placeholder="Tìm kiếm ..."
                 underlineColorAndroid="transparent"
                 onSubmitEditing={() => NavigationService.navigate('Search')}
               />
               <Icon
                 name="search"
-                color="#fff"
+                color={main_color}
                 size={24}
-                style={{position: 'absolute', marginLeft: 24, marginTop: 14}}
+                style={{position: 'absolute', marginLeft: 18, marginTop: 14}}
               />
             </View>
           </TouchableOpacity>
@@ -153,41 +152,20 @@ const AppNavigator = createStackNavigator({
   Scholar: {
     screen: ScholarScreen,
     navigationOptions: {
-      headerStyle: {
-        backgroundColor: main_color,
-      },
-      headerTitleStyle: {
-        color: '#fff',
-      },
-      headerBackImage: <Icon name="arrow-circle-left" size={26} color="#fff" />,
-      headerTitle: 'Thông tin học bổng',
-      headerRight: (
-        <View style={{flexDirection: 'row', marginHorizontal: 8}}>
-          <Button
-            buttonStyle={{backgroundColor: 'transparent'}}
-            icon={<Icon name="envelope" size={24} color="#fff" />}
-            onPress={() => alert('aaa')}
-          />
-          <Button
-            buttonStyle={{backgroundColor: 'transparent'}}
-            icon={<Icon name="bookmark" size={24} color="#fff" />}
-            onPress={() => alert('aaa')}
-          />
-        </View>
-      ),
+      headerShown: false,
     },
   },
   Search: {
     screen: SearchScreen,
     navigationOptions: {
-      headerBackImage: <Icon name="arrow-circle-left" size={26} color="#fff" />,
+      headerBackImage: <Icon name="arrow-circle-left" size={28} color="#fff" />,
       headerStyle: {backgroundColor: main_color},
     },
   },
   Profile: {
     screen: ProfileScreen,
     navigationOptions: {
-      headerBackImage: <Icon name="arrow-circle-left" size={26} color="#fff" />,
+      headerBackImage: <Icon name="arrow-circle-left" size={28} color="#fff" />,
       headerStyle: {backgroundColor: main_color},
       headerTitleStyle: {
         color: '#fff',
@@ -200,7 +178,7 @@ const AppNavigator = createStackNavigator({
   Company: {
     screen: CompanyScreen,
     navigationOptions: {
-      headerBackImage: <Icon name="arrow-circle-left" size={26} color="#fff" />,
+      headerBackImage: <Icon name="arrow-circle-left" size={28} color="#fff" />,
       headerStyle: {backgroundColor: main_color},
       headerTitleStyle: {
         color: '#fff',
@@ -213,7 +191,7 @@ const AppNavigator = createStackNavigator({
   CreateScholar: {
     screen: CreateScholarScreen,
     navigationOptions: {
-      headerBackImage: <Icon name="arrow-circle-left" size={26} color="#fff" />,
+      headerBackImage: <Icon name="arrow-circle-left" size={28} color="#fff" />,
       headerStyle: {backgroundColor: main_color},
       headerTitleStyle: {
         color: '#fff',

@@ -18,7 +18,7 @@ const list = [
   {
     id: 'n4',
     tenhocbong:
-      'Chương Trình Học Bổng Toàn Phần Bậc Thạc Sĩ Của Fulbright Vietnamese Student Program 2021-2022',
+      'Học Bổng Bậc Thạc Sĩ Của Fulbright Vietnamese Student Program 2021-2022',
     nguon: 'Công ty VNG',
     giatri: 'Giá trị: 10000USD',
     loai: 'Loại: Toàn phần',

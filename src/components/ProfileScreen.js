@@ -22,7 +22,14 @@ export default class ProfileScreen extends React.Component {
     super(props);
   }
   static navigationOptions = {
-    headerTitle: 'Thông tin cá nhân',
+    headerTitle: 'Thông tin ứng viên',
+    headerStyle: {
+      backgroundColor: main_color,
+    },
+    headerTitleStyle: {
+      color: '#fff',
+    },
+    headerBackImage: <Icon name="arrow-circle-left" size={28} color="#fff" />,
     headerRight: (
       <Icon
         name="envelope"
@@ -58,6 +65,15 @@ export default class ProfileScreen extends React.Component {
               }}>
               <Icon name="venus-mars" size={24} />
               <Text style={{fontSize: 20, marginLeft: 8}}>Nam</Text>
+            </View>
+            <View
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                marginVertical: 4,
+              }}>
+              <Icon name="birthday-cake" size={24} />
+              <Text style={{fontSize: 20, marginLeft: 8}}>10/11/1999</Text>
             </View>
             <View
               style={{

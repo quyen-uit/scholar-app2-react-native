@@ -54,7 +54,8 @@ export default class HomeScreen extends React.Component {
                   flex: 5,
                   marginLeft: 8,
                 }}>
-                <Text style={{fontSize: 18, fontWeight: 'bold'}}>
+                <Text
+                  style={{fontSize: 18, fontWeight: 'bold', marginRight: 8}}>
                   {item.tenhocbong}
                 </Text>
                 <Text style={{fontSize: 16, color: '#9a9a9c'}}>
@@ -146,6 +147,7 @@ export default class HomeScreen extends React.Component {
             borderRadius: 20,
             marginTop: 10,
             flexDirection: 'row',
+            width: width - 160,
           }}>
           <Text
             style={{
@@ -177,7 +179,9 @@ const styles = StyleSheet.create({
   },
   card: {
     width: width - 16,
-    margin: 10,
+    marginBottom: 5,
+    marginTop: 5,
+    marginHorizontal: 8,
 
     borderRadius: 10,
     padding: 8,

@@ -59,7 +59,8 @@ export default class FavoriteScreen extends React.Component {
                   flex: 5,
                   marginLeft: 8,
                 }}>
-                <Text style={{fontSize: 18, fontWeight: 'bold'}}>
+                <Text
+                  style={{fontSize: 18, fontWeight: 'bold', marginRight: 8}}>
                   {item.tenhocbong}
                 </Text>
                 <Text style={{fontSize: 16, color: '#9a9a9c'}}>
@@ -67,10 +68,10 @@ export default class FavoriteScreen extends React.Component {
                 </Text>
               </View>
               <View style={{flex: 0}}>
-              <TouchableOpacity>
-                <Icon name="times-circle" size={27} />
-              </TouchableOpacity>
-            </View>
+                <TouchableOpacity>
+                  <Icon name="times-circle" size={27} />
+                </TouchableOpacity>
+              </View>
             </View>
             <View
               style={{
@@ -101,17 +102,14 @@ export default class FavoriteScreen extends React.Component {
               </View>
             </View>
             <View
-              style={{
-                flexDirection: 'row',
-                alignItems: 'center',
-                marginLeft: 16,
-              }}>
-              <Image
-                source={require('../assets/dot.png')}
-                style={{width: 8, height: 8, marginTop: 2}}
-              />
-              <Text style={{fontSize: 16}}> {item.doituong}</Text>
-            </View>
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              marginLeft: 16,
+            }}>
+            <Icon name="check" size={8} style={{marginTop: 2}} />
+            <Text style={{fontSize: 16}}> {item.doituong}</Text>
+          </View>
             <View
               style={{
                 display: 'flex',
@@ -178,8 +176,9 @@ const styles = StyleSheet.create({
   },
   card: {
     width: width - 16,
-    margin: 10,
-
+    marginBottom: 5,
+    marginTop: 5,
+    marginHorizontal: 8,
     borderRadius: 10,
     padding: 8,
     alignSelf: 'center',

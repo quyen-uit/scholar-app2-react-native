@@ -101,7 +101,9 @@ const styles = StyleSheet.create({
   },
   card: {
     width: width - 16,
-    margin: 10,
+    marginBottom: 5,
+    marginTop: 5,
+    marginHorizontal: 8,
     borderWidth: 1,
     borderColor: '#ccc',
     borderRadius: 10,

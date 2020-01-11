@@ -60,7 +60,7 @@ export default class ListScreen extends React.Component {
                   flex: 5,
                   marginLeft: 8,
                 }}>
-                <Text style={{fontSize: 18, fontWeight: 'bold'}}>
+                <Text style={{fontSize: 18, fontWeight: 'bold', marginRight: 8}}>
                   {item.tenhocbong}
                 </Text>
                 <Text style={{fontSize: 16, color: '#9a9a9c'}}>
@@ -107,10 +107,7 @@ export default class ListScreen extends React.Component {
                 alignItems: 'center',
                 marginLeft: 16,
               }}>
-              <Image
-                source={require('../assets/dot.png')}
-                style={{width: 8, height: 8, marginTop: 2}}
-              />
+              <Icon name="check" size={8} style={{marginTop: 2}} />
               <Text style={{fontSize: 16}}> {item.doituong}</Text>
             </View>
             <View
@@ -161,7 +158,7 @@ export default class ListScreen extends React.Component {
                 marginTop: 8,
                 color: main_color,
               }}>
-              Học bổng đang chờ xác thực
+              Học bổng đang chờ xét duyệt
             </Text>
           }
         />
